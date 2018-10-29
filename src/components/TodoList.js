@@ -3,6 +3,7 @@ import Todo from './Todo';
 
 const TodoList = ({ todos, onTodoClick }) => (
   <ul>
+  
     {todos.map(todo =>
       <Todo
         key={todo.id}
@@ -18,6 +19,7 @@ TodoList.propTypes = {
     id: PropTypes.string.isRequired,
     completed: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired,
+    order: PropTypes.number.isRequired
   }).isRequired).isRequired,
   onTodoClick: PropTypes.func.isRequired,
 };

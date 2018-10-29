@@ -1,3 +1,5 @@
+import { combineReducers } from "redux";
+
 const todo = (state, action) => {
   switch (action.type) {
     case 'ADD_TODO':
@@ -5,6 +7,7 @@ const todo = (state, action) => {
         id: action.id,
         text: action.text,
         completed: false,
+        order: 0
       };
     case 'TOGGLE_TODO':
       if (state.id !== action.id) {
