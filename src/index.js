@@ -5,10 +5,12 @@ import { Provider } from "react-redux";
 import App from "./components/App";
 import Root from "./components/Root";
 import configureStore from './configureStore';
-
+import Search from "./components/search";
 const store=configureStore();
 
 render(
-  <Root store={store} />,
+  // <Root store={store} />,
+  <Search />
+  ,
   document.getElementById("root")
 );

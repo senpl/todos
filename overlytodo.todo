@@ -1,0 +1,16 @@
+//Komendy ctrl+Enter dodaje zadanie
+☐ Niech wyświetla todo, a nie hajstack
+  ☐ nodeContentRenderer moze być używany do stylowania
+☐ Opcja extand i collaps dla zadań
+☐ Porządkowanie zadań
+    ✔ Niech importuje poprawnie styl @done (10/29/2018, 12:15:25 PM)
+    ✔ Niech będzie w searchable component @done (10/29/2018, 12:15:31 PM)
+    ☐ buttons for urder up and down.
+    ☐ Niech te przyciski zmieniają priorytet
+    ☐ Niech sortowanie odbywa się po porzątku
+☐ Dodać opcję edycji i usuwania do zadania
+☐ data przy zadaniach
+☐ Moduł powtarzania zadań
+☐ Ukrywanie zadania
+☐ Najprostszy sposób do zapisu subtask'u
+☐ Ustawić sobie utrwalanie do firebase'a
