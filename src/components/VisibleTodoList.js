@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { toggleTodo } from '../actions';
+import { increasePriority, decreasePriority, toggleTodo } from "../actions";
 import TodoList from './TodoList';
 import { withRouter } from "react-router";
 import { getVisibleTodos } from "../reducers/todos";
@@ -19,7 +19,11 @@ const mapStateToProps = (state, { match }) => ({
 const VisibleTodoList = withRouter(
   connect(
     mapStateToProps,
-    { onTodoClick: toggleTodo }
+    {
+      onTodoClick: toggleTodo,
+      onPriorityUpClick: decreasePriority,
+      onPriorityDownClick: increasePriority
+    }
   )(TodoList)
 );
 

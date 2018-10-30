@@ -2,21 +2,23 @@ import { combineReducers } from "redux";
 
 const todo = (state, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
-      return {
-        id: action.id,
-        text: action.text,
-        completed: false,
-        order: 0
-      };
-    case 'TOGGLE_TODO':
+    case "ADD_TODO":
+      return { id: action.id, text: action.text, completed: false, order: 0 };
+    case "TOGGLE_TODO":
       if (state.id !== action.id) {
         return state;
       }
-      return {
-        ...state,
-        completed: !state.completed,
-      };
+      return { ...state, completed: !state.completed };
+    case "INCREASE_PRIORITY":
+      if (state.id !== action.id) {
+        return state;
+      }
+      return { ...state, order: state.order + 1 };
+    case "DECREASE_PRIORITY":
+      if (state.id !== action.id) {
+        return state;
+      }
+      return { ...state, order: state.order - 1 };
     default:
       return state;
   }
@@ -26,10 +28,11 @@ const byId = (state = {}, action) => {
   switch (action.type) {
     case "ADD_TODO":
     case "TOGGLE_TODO":
-      return {
-        ...state,
-        [action.id]: todo(state[action.id], action)
-      };
+      return { ...state, [action.id]: todo(state[action.id], action) };
+    case "INCREASE_PRIORITY":
+      return { ...state, [action.id]: todo(state[action.id], action) };
+    case "DECREASE_PRIORITY":
+      return { ...state, [action.id]: todo(state[action.id], action) };
     default:
       return state;
   }

@@ -9,8 +9,8 @@ import Search from "./components/search";
 const store=configureStore();
 
 render(
-  // <Root store={store} />,
-  <Search />
+  <Root store={store} />
+  // <Search />
   ,
   document.getElementById("root")
 );

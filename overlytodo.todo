@@ -1,11 +1,18 @@
-//Komendy ctrl+Enter dodaje zadanie
-☐ Niech wyświetla todo, a nie hajstack
-  ☐ nodeContentRenderer moze być używany do stylowania
-☐ Opcja extand i collaps dla zadań
+//Komendy ctrl+Enter dodaje zadanie alt+D rozwiązuje alt+c anuluje
 ☐ Porządkowanie zadań
+    ☐ Niech order decyduje o tym w jakiej kolejności wykonywać zadania
+        ✔ nie działa przycisk w dół @done (10/30/2018, 12:08:40 PM)
+        ✔ Niech przyciski up and down faktycznie sterują priorytetem zadania @done (October 30th 2018, 11:38)
+        ☐ Niech przycisk up jest nad przyciskiem down
     ✔ Niech importuje poprawnie styl @done (10/29/2018, 12:15:25 PM)
     ✔ Niech będzie w searchable component @done (10/29/2018, 12:15:31 PM)
-    ☐ buttons for urder up and down.
+    ✔ buttons for urder up and down. Nie działa jak dla mnie. @done (10/30/2018, 10:52:14 AM)
+        ✔ Button up and down podpiąć pod funkcje @done (10/30/2018, 10:52:22 AM)
+        ✔ Toggle działa, czyli nie mam pojęcia dlaczego @done (October 30th 2018, 10:47)
+            ✔ Akcja nie jest poprawnie rozpoznawana @done (October 30th 2018, 10:47)
+               ✔ Akcja toogle_Todo działa, akcja increase nie działą. @done (October 30th 2018, 10:47)
+                    ✔ Spróbować skopiować Toogle i niech na razie robi to samo pod nową nazwą @done (October 30th 2018, 10:47)
+        podmienić nazwy na increasePriority
     ☐ Niech te przyciski zmieniają priorytet
     ☐ Niech sortowanie odbywa się po porzątku
 ☐ Dodać opcję edycji i usuwania do zadania
@@ -13,4 +20,10 @@
 ☐ Moduł powtarzania zadań
 ☐ Ukrywanie zadania
 ☐ Najprostszy sposób do zapisu subtask'u
+☐ teraz zwiększają order, ale nie ma informacji jaki order ma zadanie powyżej
 ☐ Ustawić sobie utrwalanie do firebase'a
+☐ Spróbować uruchamiać z webpack-serve
+☐ Niech wyświetla todo, a nie hajstack
+    ☐ Gdzie mamy state naszych todo    
+  ☐ nodeContentRenderer moze być używany do stylowania poszczególnych węzłów searchable tree
+☐ Opcja extand i collaps dla zadań
