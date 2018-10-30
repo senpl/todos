@@ -3,7 +3,10 @@ import {
   FaCaretUp,
   FaCaretDown,
   FaCaretRight,
-  FaCartLeft} from "react-icons/fa";
+  FaCartLeft,
+  FaCheckSquare,
+  FaSquare
+} from "react-icons/fa";
 
 const Todo = ({
   onClick,
@@ -14,16 +17,21 @@ const Todo = ({
   onPriorityDownClick
 }) => (
   <div>
-    {" "} 
-    <FaCaretUp onClick={onPriorityUpClick} />
-    <FaCaretDown onClick={onPriorityDownClick} />
+    {" "}
+    <FaCaretUp style={upArrowStyle} onClick={onPriorityUpClick} />
+    <FaCaretDown style={downArrowStyle} onClick={onPriorityDownClick} />
+    {!completed ? (
+      <FaSquare onClick={onClick} />
+    ) : (
+      <FaCheckSquare onClick={onClick} />
+    )}
     <FaCaretRight />
-    <text>{order}</text>{" "}
-    <text
-      onClick={onClick}
-      style={{
-        textDecoration: completed ? "line-through" : "none"
-      }}
+    {/* <text>{order}</text>{" "} */}
+    <text 
+      // onClick={onClick}
+      // style={{
+      //   textDecoration: completed ? "line-through" : "none"
+      // }}
     >
       {text}
     </text>
@@ -37,6 +45,19 @@ Todo.propTypes = {
   order: PropTypes.number.isRequired,
   onPriorityUpClick: PropTypes.func.isRequired,
   onPriorityDownClick: PropTypes.func.isRequired
+};
+
+const upArrowStyle = {
+  color: "blue",
+  position: "relative",
+  top: "-4px"
+};
+
+const downArrowStyle = {
+  color: "violet",
+  position: "relative",
+  top: "4px",
+  right: "16px",
 };
 
 export default Todo;

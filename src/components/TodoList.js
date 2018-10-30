@@ -7,7 +7,7 @@ const TodoList = ({
   onPriorityUpClick,
   onPriorityDownClick
 }) => (
-  <ul>
+  <div>
     {todos
       .sort(function(a, b) {
         return a.order - b.order;
@@ -21,7 +21,7 @@ const TodoList = ({
           onPriorityDownClick={() => onPriorityDownClick(todo.id)}
         />
       ))}
-  </ul>
+  </div>
 );
 
 TodoList.propTypes = {
