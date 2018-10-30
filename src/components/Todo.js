@@ -13,14 +13,8 @@ const Todo = ({
   onPriorityUpClick,
   onPriorityDownClick
 }) => (
-  <li
-
-  // onClick={onClick}
-  // style={{
-  //   textDecoration: completed ? "line-through" : "none"
-  // }}
-  >
-    {" "}
+  <div>
+    {" "} 
     <FaCaretUp onClick={onPriorityUpClick} />
     <FaCaretDown onClick={onPriorityDownClick} />
     <FaCaretRight />
@@ -33,7 +27,7 @@ const Todo = ({
     >
       {text}
     </text>
-  </li>
+  </div>
 );
 
 Todo.propTypes = {

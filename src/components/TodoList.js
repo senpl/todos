@@ -8,15 +8,19 @@ const TodoList = ({
   onPriorityDownClick
 }) => (
   <ul>
-    {todos.map(todo => (
-      <Todo
-        key={todo.id}
-        {...todo}
-        onClick={() => onTodoClick(todo.id)}
-        onPriorityUpClick={() => onPriorityUpClick(todo.id)}
-        onPriorityDownClick={() => onPriorityDownClick(todo.id)}
-      />
-    ))}
+    {todos
+      .sort(function(a, b) {
+        return a.order - b.order;
+      })
+      .map(todo => (
+        <Todo
+          key={todo.id}
+          {...todo}
+          onClick={() => onTodoClick(todo.id)}
+          onPriorityUpClick={() => onPriorityUpClick(todo.id)}
+          onPriorityDownClick={() => onPriorityDownClick(todo.id)}
+        />
+      ))}
   </ul>
 );
 
