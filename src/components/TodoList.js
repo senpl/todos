@@ -5,7 +5,8 @@ const TodoList = ({
   todos,
   onTodoClick,
   onPriorityUpClick,
-  onPriorityDownClick
+  onPriorityDownClick,
+  editTodo
 }) => (
   <div>
     {todos
@@ -19,6 +20,7 @@ const TodoList = ({
           onClick={() => onTodoClick(todo.id)}
           onPriorityUpClick={() => onPriorityUpClick(todo.id)}
           onPriorityDownClick={() => onPriorityDownClick(todo.id)}
+          editTodo={text2 => editTodo(todo.id, text2)}
         />
       ))}
   </div>

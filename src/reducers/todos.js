@@ -19,6 +19,11 @@ const todo = (state, action) => {
         return state;
       }
       return { ...state, order: state.order - 1 };
+    case "EDIT_TODO":
+      if (state.id !== action.id) {
+        return state;
+      }
+      return { ...state };
     default:
       return state;
   }
@@ -32,6 +37,8 @@ const byId = (state = {}, action) => {
     case "INCREASE_PRIORITY":
       return { ...state, [action.id]: todo(state[action.id], action) };
     case "DECREASE_PRIORITY":
+      return { ...state, [action.id]: todo(state[action.id], action) };
+    case "EDIT_TODO":
       return { ...state, [action.id]: todo(state[action.id], action) };
     default:
       return state;

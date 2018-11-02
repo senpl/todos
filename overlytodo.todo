@@ -2,9 +2,16 @@
 ☐ Dodać opcję edycji i usuwania do zadania
     ✔ Checkbox do oznaczania zadań jako zrobionych @done (October 30th 2018, 14:15)
         ✔ Znaleźć ikone checked/unchecked @done (October 30th 2018, 14:15)
-    ☐ Double click niech edytuje nazwę elementu
-        ☐ dodać zdarzenie doubleClick
-            ☐ niech po jego wywołaniu wchodzi w edycje textu elementu
+    ☐ single click on text niech edytuje nazwę elementu
+        ✔ wziąść najprostszy działający na przycisk zapis edit @done (November 2nd 2018, 15:37)
+            ✔ Zmodyfikować do działania na blurOut @done (November 2nd 2018, 15:37)
+            ✔ włączyć do projektu @done (November 2nd 2018, 15:37)
+        ☐ Niech zapisuje element tak jak addTodo
+        albo niech zapisuje jak tdo, bo tam też ta edycja działa.
+        ☐ niech na razie zapisuje na przycisk
+            ☐ Docelowo się to zamieni na akcje przy opuszczaniu pola
+        ✔ dodać zdarzenie doubleClick @done (October 30th 2018, 16:44)
+            ✔ niech po jego wywołaniu wchodzi w edycje textu elementu @done (October 30th 2018, 16:44)
     ☐ Niech zadania zaczynają się od początku strony
 ☐ Porządkowanie zadań
     ☐ Dodawanie subzadania

@@ -7,14 +7,19 @@ import {
   FaCheckSquare,
   FaSquare
 } from "react-icons/fa";
+// import ContentEditable from "react-contenteditable";
+// import { editTodo } from '../actions';
+import EditableListElement from "./EditableListElement";
 
 const Todo = ({
+  id,
   onClick,
   completed,
   text,
   order,
   onPriorityUpClick,
-  onPriorityDownClick
+  onPriorityDownClick,
+  editTodo
 }) => (
   <div>
     {" "}
@@ -25,16 +30,9 @@ const Todo = ({
     ) : (
       <FaCheckSquare onClick={onClick} />
     )}
-    <FaCaretRight />
+    <FaCaretRight onClick={() => editTodo(1, text + "Te")} />
     {/* <text>{order}</text>{" "} */}
-    <text 
-      // onClick={onClick}
-      // style={{
-      //   textDecoration: completed ? "line-through" : "none"
-      // }}
-    >
-      {text}
-    </text>
+    <EditableListElement name={text} id={id} />
   </div>
 );
 
