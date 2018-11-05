@@ -1,4 +1,5 @@
 import React from "react";
+import { editTodo } from "../actions";
 
 export default class EditableListElement extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ export default class EditableListElement extends React.Component {
 
   handleChange(e) {
     this.setState({ editText: e.target.value });
-
+    editTodo(this.id, e.target.value);
   }
 
   handleSubmit(e) {

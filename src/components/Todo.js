@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from "prop-types";
 import {
   FaCaretUp,
   FaCaretDown,
@@ -42,7 +43,8 @@ Todo.propTypes = {
   text: PropTypes.string.isRequired,
   order: PropTypes.number.isRequired,
   onPriorityUpClick: PropTypes.func.isRequired,
-  onPriorityDownClick: PropTypes.func.isRequired
+  onPriorityDownClick: PropTypes.func.isRequired,
+  editTodo: PropTypes.func.isRequired
 };
 
 const upArrowStyle = {
