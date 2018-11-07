@@ -1,4 +1,4 @@
-import path from 'path';
+import path from "path";
 
 export default {
   devtool: "eval",
@@ -9,43 +9,13 @@ export default {
     publicPath: "/static/"
   },
   module: {
-    // module: {
-    //   rules: [
-    //   //   {
-    //   //   test: /\.css$/,
-    //   //   use: ["style-loader", "css-loader"],
-    //   // },
-    //     {
-    //       test: /\.m?js$/,
-    //       exclude: /(node_modules|bower_components)/,
-    //       use: {
-    //         loader: "babel",
-    //         options: {
-    //           presets: ["@babel/preset-env"]
-    //         }
-    //       }
-    //     }
-    //   //   , 
-    //   ]
-    // }
-    loaders: [{
-      test: /\.js$/,
-      loaders: ['babel'],
-      exclude: /node_modules/,
-      include: __dirname,
-    }],
-    // rules: [
-    //   {
-    //   test: /\.js$/,
-    //   loaders: ['babel'],
-    //   exclude: /node_modules/,
-    //   include: __dirname,
-    // },
-    //   {
-    //     test: /\.css$/,
-    //     use: ["style-loader", "css-loader"],
-
-    //   }
-    // ]
+    loaders: [
+      {
+        test: /\.js$/,
+        loaders: ["babel"],
+        exclude: /node_modules/,
+        include: __dirname
+      }
+    ]
   }
 };
