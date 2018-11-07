@@ -2,4 +2,6 @@
 *.log
 dist
 node_modules
+.vscode-upload.json
+package-lock.json
 
