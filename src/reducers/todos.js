@@ -23,7 +23,9 @@ const todo = (state, action) => {
       if (state.id !== action.id) {
         return state;
       }
-      return { ...state };
+      // console.log("state " + JSON.stringify(state));
+      // console.log("action " + JSON.stringify(action));
+      return { ...state, text: action.text };
     default:
       return state;
   }
