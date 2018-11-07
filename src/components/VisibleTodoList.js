@@ -24,7 +24,7 @@ const VisibleTodoList = withRouter(
       onTodoClick: toggleTodo,
       onPriorityUpClick: decreasePriority,
       onPriorityDownClick: increasePriority,
-      editTodo: editTodo
+      onTodoEditClick: editTodo
     }
   )(TodoList)
 );

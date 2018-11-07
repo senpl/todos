@@ -7,7 +7,7 @@ const TodoList = ({
   onTodoClick,
   onPriorityUpClick,
   onPriorityDownClick,
-  editTodo
+  onTodoEditClick
 }) => (
   <div>
     {todos
@@ -21,7 +21,7 @@ const TodoList = ({
           onClick={() => onTodoClick(todo.id)}
           onPriorityUpClick={() => onPriorityUpClick(todo.id)}
           onPriorityDownClick={() => onPriorityDownClick(todo.id)}
-          editTodo={text2 => editTodo(todo.id, text2)}
+          onEditClick={(txt) => onTodoEditClick(todo.id, txt)}
         />
       ))}
   </div>
@@ -39,6 +39,7 @@ TodoList.propTypes = {
   onTodoClick: PropTypes.func.isRequired,
   onPriorityUpClick: PropTypes.func.isRequired,
   onPriorityDownClick: PropTypes.func.isRequired,
+  onTodoEditClick: PropTypes.func.isRequired
 };
 
 export default TodoList;

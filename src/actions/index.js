@@ -9,9 +9,9 @@ export const increasePriority = id => ({ type: "INCREASE_PRIORITY", order: order
 export const decreasePriority = id => ({ type: "DECREASE_PRIORITY", order: order, id });
 
 export const editTodo = 
-(id=1, text="te2") => 
+(id,text) => 
 (
-  { type: "EDIT_TODO", id: id, text, order: order });
+  { type: "EDIT_TODO", text: text, id});
 
 
 export const toggleTodo = id => ({
