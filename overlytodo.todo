@@ -1,20 +1,8 @@
 //Komendy ctrl+Enter dodaje zadanie alt+D rozwiązuje alt+c anuluje
-☐ Dodać opcję edycji i usuwania do zadania
-    ✔ Checkbox do oznaczania zadań jako zrobionych @done (October 30th 2018, 14:15)
-        ✔ Znaleźć ikone checked/unchecked @done (October 30th 2018, 14:15)
-    ☐ single click on text niech edytuje nazwę elementu
-        ✔ wziąść najprostszy działający na przycisk zapis edit @done (November 2nd 2018, 15:37)
-            ✔ Zmodyfikować do działania na blurOut @done (November 2nd 2018, 15:37)
-            ✔ włączyć do projektu @done (November 2nd 2018, 15:37)
-        ☐ Niech zapisuje element tak jak addTodo
-        albo niech zapisuje jak tdo, bo tam też ta edycja działa.
-        ☐ niech na razie zapisuje na przycisk
-            ☐ Docelowo się to zamieni na akcje przy opuszczaniu pola
-        ✔ dodać zdarzenie doubleClick @done (October 30th 2018, 16:44)
-            ✔ niech po jego wywołaniu wchodzi w edycje textu elementu @done (October 30th 2018, 16:44)
-    ☐ Niech zadania zaczynają się od początku strony
+☐ uporządkować kod po dodawaniu editable fields
 ☐ Porządkowanie zadań
     ☐ Dodawanie subzadania
+        ☐ Wprowadzić index do dodawania????
     ☐ Przycisk do subtask oprogramować ???
     ✔ Niech order decyduje o tym w jakiej kolejności sortować zadania @done (October 30th 2018, 13:34)
         ✔ nie działa przycisk w dół @done (10/30/2018, 12:08:40 PM)
@@ -34,6 +22,7 @@
         ✔ podmienić nazwy na increasePriority @done (October 30th 2018, 13:35)
     ✔ Niech te przyciski zmieniają priorytet @done (October 30th 2018, 13:34)
     ✔ Niech sortowanie odbywa się po porzątku @done (October 30th 2018, 13:35)
+☐ Dodać ususwanie zadań
 ☐ data przy zadaniach
 ☐ Moduł powtarzania zadań
 ☐ Ukrywanie zadania
@@ -45,3 +34,5 @@
     ☐ Gdzie mamy state naszych todo    
   ☐ nodeContentRenderer moze być używany do stylowania poszczególnych węzłów searchable tree
 ☐ Opcja extand i collaps dla zadań
+☐ Spróbować dodać podzadanie do tdo
+    ☐ Sprawdzić, czy nie ma nowszej wersji niż moja
